@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="EventStyle.css">
+</head>
+<body>
+    <br>
+    <br>
+<center>
+      <div id="N1">Number 1 = <input id="no1" type="number"><br><br></div>
+  <div id="N2">    Number 2 = <input id="no2" type="number"></center><br><br></div>
+      <center> <button onclick=" answeradd()">ADDITION</button><br><br><br>
+       <button onclick="answersub()">SUBTRACTION</button><br><br><br>
+       <button onclick="answermult()">MULTIPLAY</button><br><br><br>
+       <button onclick="answerdiv()">DIVIDE</button><br><br><br><br>
+    </center>
+    <center>
+   <div id="button"> 
+       <button id="result1"  >Answer ADD</button>
+       <button id="result2" >Answer SUB</button>
+       <button id="result3" >Answer MUL</button>
+       <button id="result4" >Answer DIV</button>
+    </div>
+</center>
+       
+
+       <script>
+                   var box1=document.getElementById("no1")
+                   var box2=document.getElementById("no2")
+                   var resultt=document.getElementById("result1")
+
+                 
+
+                   function answeradd()
+                   {
+                    var box1value=Number(box1.value)
+                    var box2value=Number(box2.value)
+                    var total = box1value+box2value
+                    result1.textContent=total    }
+
+
+          var resultt=document.getElementById("result2")
+                    function answersub()
+                   {
+                    var box1value=Number(box1.value)
+                    var box2value=Number(box2.value)
+                    var total = box1value-box2value
+                    result2.textContent=total    }
+
+                   
+                    var resultt=document.getElementById("result3")
+                    function answermult()
+                   {
+                    var box1value=Number(box1.value)
+                    var box2value=Number(box2.value)
+                    var total = box1value*box2value
+                    result3.textContent=total    }
+
+                
+                    var resultt=document.getElementById("result4")
+                    function answerdiv()
+                   {
+                    var box1value=Number(box1.value)
+                    var box2value=Number(box2.value)
+                    var total = box1value/box2value
+                    result4.textContent=total    }
+
+
+
+
+
+       </script>
+
+        
+
+      
+
+    
+</body>
+</html>
